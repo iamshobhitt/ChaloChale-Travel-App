@@ -226,6 +226,7 @@ document.querySelectorAll("[data-destination]").forEach(function (button) {
 });
 
 // Read a destination from the URL on the Booking page.
+let bookingFromCart = false;
 const bookingDestination = document.getElementById("bookingDestination");
 if (bookingDestination) {
   const params = new URLSearchParams(window.location.search);
@@ -233,7 +234,10 @@ if (bookingDestination) {
   if (destination) {
     bookingDestination.value = destination;
   } else if (getCart().length > 0) {
+    bookingFromCart = true;
     bookingDestination.value = getCart().map(function (item) { return item.name; }).join(", ");
+    const people = document.getElementById("people");
+    if (people) people.value = Math.max.apply(null, getCart().map(function (item) { return item.qty; }));
   }
 }
 
@@ -258,7 +262,8 @@ function renderBookingSummary(cart) {
 renderBookingSummary(getCart());
 
 // Do not allow travel dates in the past.
-const today = new Date().toISOString().split("T")[0];
+const now = new Date();
+const today = now.getFullYear() + "-" + String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
 document.querySelectorAll('input[type="date"]').forEach(function (input) {
   input.min = today;
 });
@@ -273,14 +278,17 @@ if (bookingForm) {
   });
 }
 
-// Demo booking form on the separate Booking page. Clears the cart once submitted.
+// Demo booking form on the separate Booking page. Clears the cart if the booking was for the cart items.
 const bookingPageForm = document.getElementById("bookingPageForm");
 if (bookingPageForm) {
   bookingPageForm.addEventListener("submit", function (event) {
     event.preventDefault();
     document.getElementById("bookingPageMessage").classList.remove("d-none");
     bookingPageForm.reset();
-    saveCart([]);
+    if (bookingFromCart) {
+      saveCart([]);
+      bookingFromCart = false;
+    }
   });
 }
 
