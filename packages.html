@@ -39,40 +39,105 @@
         </div>
     </header>
     <main class="container py-5">
+        <div class="text-center mb-5">
+            <p class="section-tag">TRAVEL DEALS</p>
+            <h2 class="section-title">Pick a package, add it to your cart</h2>
+            <p class="text-muted">All prices are per person and include stay and sightseeing.</p>
+        </div>
         <div class="row g-4">
             <div class="col-md-6 col-lg-4">
-                <div class="card package-card h-100"><img
-                        src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=900&q=80"
-                        class="card-img-top" alt="Manali">
-                    <div class="card-body"><span class="badge text-bg-success">Adventure</span>
-                        <h5 class="mt-2">Manali Escape</h5>
-                        <p class="text-muted">4 days / 3 nights · Hotel · Breakfast</p>
-                        <h4 class="price">₹9,999</h4><a class="btn btn-primary"
-                            href="booking.html?destination=Manali%20Escape">Book now</a>
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Manali">
+                        <span class="badge text-bg-success card-tag">Adventure</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.8</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Manali Escape</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>4D / 3N</span><span><i class="fa-solid fa-hotel"></i>Hotel · Breakfast</span></div>
+                        <h4 class="price mt-auto">₹9,999 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="manali-escape" data-name="Manali Escape" data-price="9999" data-img="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Manali%20Escape">Book now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card package-card h-100"><img
-                        src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80"
-                        class="card-img-top" alt="Goa">
-                    <div class="card-body"><span class="badge text-bg-info">Beach</span>
-                        <h5 class="mt-2">Goa Getaway</h5>
-                        <p class="text-muted">3 days / 2 nights · Hotel · Sightseeing</p>
-                        <h4 class="price">₹7,499</h4><a class="btn btn-primary"
-                            href="booking.html?destination=Goa%20Getaway">Book now</a>
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Goa">
+                        <span class="badge text-bg-info card-tag">Beach</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.7</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Goa Getaway</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>3D / 2N</span><span><i class="fa-solid fa-hotel"></i>Hotel · Sightseeing</span></div>
+                        <h4 class="price mt-auto">₹7,499 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="goa-getaway" data-name="Goa Getaway" data-price="7499" data-img="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Goa%20Getaway">Book now</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
-                <div class="card package-card h-100"><img
-                        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
-                        class="card-img-top" alt="Agra">
-                    <div class="card-body"><span class="badge text-bg-warning">Culture</span>
-                        <h5 class="mt-2">Agra Heritage Tour</h5>
-                        <p class="text-muted">2 days / 1 night · Hotel · Guided tour</p>
-                        <h4 class="price">₹5,499</h4><a class="btn btn-primary"
-                            href="booking.html?destination=Agra%20Heritage%20Tour">Book now</a>
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Agra">
+                        <span class="badge text-bg-warning card-tag">Culture</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.6</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Agra Heritage Tour</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>2D / 1N</span><span><i class="fa-solid fa-hotel"></i>Hotel · Guided tour</span></div>
+                        <h4 class="price mt-auto">₹5,499 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="agra-heritage-tour" data-name="Agra Heritage Tour" data-price="5499" data-img="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Agra%20Heritage%20Tour">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Kerala">
+                        <span class="badge text-bg-success card-tag">Nature</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.9</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Kerala Backwaters</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>5D / 4N</span><span><i class="fa-solid fa-hotel"></i>Houseboat · Meals</span></div>
+                        <h4 class="price mt-auto">₹14,999 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="kerala-backwaters" data-name="Kerala Backwaters" data-price="14999" data-img="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Kerala%20Backwaters">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Jaipur">
+                        <span class="badge text-bg-danger card-tag">Heritage</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.7</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Royal Jaipur</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>3D / 2N</span><span><i class="fa-solid fa-hotel"></i>Hotel · Fort tours</span></div>
+                        <h4 class="price mt-auto">₹8,499 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="royal-jaipur" data-name="Royal Jaipur" data-price="8499" data-img="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Royal%20Jaipur">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card package-card h-100">
+                    <div class="img-wrap"><img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=900&q=80" class="card-img-top" alt="Mumbai">
+                        <span class="badge text-bg-primary card-tag">City</span>
+                        <span class="card-rating"><i class="fa-solid fa-star"></i> 4.5</span></div>
+                    <div class="card-body">
+                        <h5 class="fw-bold">Mumbai City Lights</h5>
+                        <div class="package-meta"><span><i class="fa-regular fa-clock"></i>2D / 1N</span><span><i class="fa-solid fa-hotel"></i>Hotel · City tour</span></div>
+                        <h4 class="price mt-auto">₹4,999 <small>/ person</small></h4>
+                        <div class="d-flex gap-2 mt-2">
+                            <button type="button" class="btn btn-primary flex-fill add-to-cart" data-id="mumbai-city-lights" data-name="Mumbai City Lights" data-price="4999" data-img="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=900&q=80"><i class="fa-solid fa-cart-plus"></i> Add to cart</button>
+                            <a class="btn btn-outline-primary" href="booking.html?destination=Mumbai%20City%20Lights">Book now</a>
+                        </div>
                     </div>
                 </div>
             </div>
